@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'widget_tweaks',
     
     'boards',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+
+LOGOUT_REDIRECT_URL = 'home'
+
+
+LOGIN_REDIRECT_URL = 'home'
